@@ -8,7 +8,7 @@
   --text-color: #757575;
   --title-color: #212121;
   --footer-white: rgba(255, 255, 255, 0.6);
-  --grey-icon: #AFB1B8;
+  --grey-icon: #afb1b8;
 }
 
 html {
@@ -133,7 +133,7 @@ img {
 
 .contacts {
   color: var(--text-color);
- 
+
   display: flex;
   align-items: center;
 
@@ -156,7 +156,7 @@ img {
   width: 10px;
   height: 16px;
   fill: currentColor;
-  margin-right: 10px; 
+  margin-right: 10px;
 }
 
 .pages-item:not(:last-child),
@@ -173,8 +173,12 @@ img {
   padding: 200px 0;
   text-align: center;
 
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
-  url('../images/backgroundimg.jpg');
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/backgroundimg.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -240,7 +244,7 @@ img {
 }
 
 .advantages-icon-container {
-  background-color:var(--grey-color);
+  background-color: var(--grey-color);
 
   border-radius: 4px;
 
@@ -340,11 +344,10 @@ img {
   cursor: pointer;
   padding: 12px;
   display: inline-flex;
-
 }
 
 .sn-list-link {
-    display: inline-flex;
+  display: inline-flex;
 }
 
 .sn-list-item:not(:last-child) {
@@ -379,7 +382,7 @@ img {
 
 .clients-list-item {
   padding: 16px 32px;
-  border: 1px solid #AFB1B8;
+  border: 1px solid #afb1b8;
   border-radius: 4px;
   cursor: pointer;
 }
@@ -389,7 +392,7 @@ img {
 }
 
 .clients-link {
-  color: #AFB1B8;
+  color: #afb1b8;
 }
 
 .clients-list-icon {
@@ -398,7 +401,7 @@ img {
   fill: currentColor;
 }
 
-.clients-list-item:hover {  
+.clients-list-item:hover {
   border: 1px solid var(--accent);
 }
 
@@ -475,10 +478,9 @@ img {
   background-color: var(--accent);
 }
 
-.company-sn-item:hover .company-sn-icon  {
-fill: var(--white);
+.company-sn-item:hover .company-sn-icon {
+  fill: var(--white);
 }
-
 
 .info {
   color: var(--footer-white);
@@ -537,9 +539,10 @@ fill: var(--white);
 
 .card-list-item {
   margin-bottom: 30px;
+  max-width: 370px;
   border: 1px solid #eeeeee;
   cursor: pointer;
-
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .card-list-item:not(:nth-child(3n + 3)) {
