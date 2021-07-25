@@ -56,7 +56,7 @@ img {
 
 .section {
   padding-top: 94px;
-  padding-bottom: 43px;
+  padding-bottom: 94px;
 }
 
 /* ШАПКА */
@@ -298,8 +298,6 @@ img {
 
 .team {
   background-color: var(--grey-color);
-  padding-top: 145px;
-  padding-bottom: 43px;
 }
 
 .team-list {
@@ -340,18 +338,18 @@ img {
   margin-top: 16px;
 }
 
-.sn-list-item {
-  cursor: pointer;
-  padding: 12px;
-  display: inline-flex;
+.sn-list-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .sn-list-link {
-  display: inline-flex;
-}
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
 
-.sn-list-item:not(:last-child) {
-  margin-right: 10px;
+  cursor: pointer;
 }
 
 .sn-list-icon {
@@ -361,18 +359,13 @@ img {
   height: 20px;
 }
 
-.sn-list-item:hover {
+.sn-list-link:hover {
   background-color: var(--accent);
   border-radius: 50%;
 }
 
-.sn-list-item:hover .sn-list-icon {
+.sn-list-link:hover .sn-list-icon {
   fill: var(--white);
-}
-
-.clients {
-  padding-top: 145px;
-  padding-bottom: 43px;
 }
 
 .clients-list {
@@ -380,8 +373,12 @@ img {
   margin-top: 50px;
 }
 
-.clients-list-item {
-  padding: 16px 32px;
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   cursor: pointer;
@@ -401,11 +398,11 @@ img {
   fill: currentColor;
 }
 
-.clients-list-item:hover {
+.clients-link:hover {
   border: 1px solid var(--accent);
 }
 
-.clients-list-item:hover .clients-list-icon {
+.clients-link:hover .clients-list-icon {
   fill: var(--accent);
 }
 
@@ -452,16 +449,16 @@ img {
   margin-top: 30px;
 }
 
-.company-sn-item {
+.company-sn-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+
   background-color: rgba(255, 255, 255, 0.1);
 
-  display: inline-flex;
-  padding: 12px;
   border-radius: 50%;
-}
-
-.company-sn-link {
-  display: inline-flex;
 }
 
 .company-sn-item:not(:last-child) {
@@ -474,11 +471,11 @@ img {
   height: 20px;
 }
 
-.company-sn-item:hover {
+.company-sn-link:hover {
   background-color: var(--accent);
 }
 
-.company-sn-item:hover .company-sn-icon {
+.company-sn-link:hover .company-sn-icon {
   fill: var(--white);
 }
 
@@ -517,6 +514,13 @@ img {
   cursor: pointer;
 }
 
+.current-button {
+  background-color: var(--accent);
+  color: var(--white);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
 .button-list-item:not(:last-child) {
   margin-right: 8px;
 }
@@ -537,14 +541,6 @@ img {
   margin-top: 50px;
 }
 
-.card-list-item {
-  margin-bottom: 30px;
-  max-width: 370px;
-  border: 1px solid #eeeeee;
-  cursor: pointer;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
 .card-list-item:not(:nth-child(3n + 3)) {
   margin-right: 30px;
 }
@@ -555,9 +551,17 @@ img {
   margin-bottom: 0;
 }
 
-.product-card {
+.card-list-link {
+  margin-bottom: 30px;
+  max-width: 370px;
+  border: 1px solid #eeeeee;
+  cursor: pointer;
   text-decoration: none;
   display: block;
+}
+
+.card-list-link:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .card-image {
