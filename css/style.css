@@ -167,10 +167,10 @@ img {
 /*СЕКЦИЯ С КНОПКОЙ ЗАКАЗА */
 
 .hero-section {
-  height: 600px;
   max-width: 1600px;
   background-color: var(--brand-color);
   padding: 200px 0;
+  margin: 0 auto;
   text-align: center;
 
   background-image: linear-gradient(
@@ -442,6 +442,7 @@ img {
   font-size: 14px;
   line-height: 16px;
   text-transform: uppercase;
+  padding-top: 12px;
 }
 
 .company-sn-list {
